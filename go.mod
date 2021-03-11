@@ -3,7 +3,7 @@ module github.com/datatorch/datatorch
 go 1.16
 
 require (
-	github.com/AlecAivazis/survey/v2 v2.2.8
+	github.com/AlecAivazis/survey/v2 v2.2.9
 	github.com/MakeNowJust/heredoc/v2 v2.0.1
 	github.com/Masterminds/semver v1.5.0
 	github.com/dustin/go-humanize v1.0.0
