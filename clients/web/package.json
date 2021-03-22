@@ -35,7 +35,7 @@
     "@emotion/react": "^11.1.5",
     "@emotion/styled": "^11.1.5",
     "@next/bundle-analyzer": "^10.0.9",
-    "@react-three/drei": "^3.11.0",
+    "@react-three/drei": "^3.11.2",
     "framer-motion": "^3.10.5",
     "golden-layout": "^2.0.2",
     "graphql": "^15.5.0",
