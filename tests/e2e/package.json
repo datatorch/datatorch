@@ -8,6 +8,6 @@
     "cy:verify": "cypress verify"
   },
   "dependencies": {
-    "cypress": "^6.7.1"
+    "cypress": "^6.8.0"
   }
 }
