@@ -31,7 +31,7 @@
   "dependencies": {
     "@apollo/client": "^3.3.13",
     "@chakra-ui/react": "^1.4.1",
-    "@chakra-ui/theme-tools": "^1.1.0",
+    "@chakra-ui/theme-tools": "^1.1.1",
     "@emotion/react": "^11.1.5",
     "@emotion/styled": "^11.1.5",
     "@next/bundle-analyzer": "^10.0.9",
