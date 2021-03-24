@@ -29,9 +29,9 @@
     ]
   },
   "dependencies": {
-    "@apollo/client": "^3.3.12",
+    "@apollo/client": "^3.3.13",
     "@chakra-ui/react": "^1.4.1",
-    "@chakra-ui/theme-tools": "^1.1.0",
+    "@chakra-ui/theme-tools": "^1.1.1",
     "@emotion/react": "^11.1.5",
     "@emotion/styled": "^11.1.5",
     "@next/bundle-analyzer": "^10.0.9",
@@ -49,7 +49,7 @@
     "mitt": "^2.1.0",
     "next": "^10.0.9",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1",
+    "react-dom": "^17.0.2",
     "react-grid-layout": "^1.2.4",
     "react-hook-form": "^6.15.4",
     "react-icons": "^4.2.0",
