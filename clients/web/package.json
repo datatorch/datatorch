@@ -60,7 +60,7 @@
     "runtypes": "^5.1.0",
     "sass": "^1.32.8",
     "slate": "^0.59.0",
-    "slate-history": "^0.59.0",
+    "slate-history": "^0.61.0",
     "slate-react": "^0.59.0",
     "slugify": "^1.4.7",
     "subscriptions-transport-ws": "^0.9.18",
