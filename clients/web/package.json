@@ -35,7 +35,7 @@
     "@emotion/react": "^11.1.5",
     "@emotion/styled": "^11.1.5",
     "@next/bundle-analyzer": "^10.0.9",
-    "@react-three/drei": "^3.11.2",
+    "@react-three/drei": "^4.0.0",
     "framer-motion": "^4.0.3",
     "golden-layout": "^2.0.2",
     "graphql": "^15.5.0",
@@ -51,7 +51,7 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.2",
     "react-grid-layout": "^1.2.4",
-    "react-hook-form": "^6.15.4",
+    "react-hook-form": "^6.15.5",
     "react-icons": "^4.2.0",
     "react-leaflet": "^3.1.0",
     "react-three-fiber": "^5.3.19",
@@ -68,7 +68,7 @@
     "wavesurfer.js": "^4.6.0"
   },
   "devDependencies": {
-    "@chakra-ui/cli": "^1.2.1",
+    "@chakra-ui/cli": "^1.3.0",
     "@testing-library/react": "^11.2.5",
     "@types/jest": "^26.0.20",
     "@types/leaflet": "^1.7.0",
