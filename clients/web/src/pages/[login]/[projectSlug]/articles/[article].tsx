@@ -238,16 +238,30 @@ const Author: React.FC = () => {
   )
 }
 
-const ProjectArticles: NextPage = () => {
-  const [value, setValue] = useState<Node[]>(initValue)
-  const router = useRouter()
-  const projectLayout = !((router.query?.fullscreen ?? 'true') === 'true')
+type LayoutProps = {
+  children
+  projectLayout
+  scrollbarCss
+}
 
-  const scrollbarCss = useScrollBarTheme()
-
-  const Layout: React.FC = ({ children }) =>
-    projectLayout ? (
-      <ProjectLayout
+const Layout: React.FC<LayoutProps> = ({
+  children,
+  projectLayout,
+  scrollbarCss
+}) =>
+  projectLayout ? (
+    <ProjectLayout
+      w="full"
+      h="full"
+      position="relative"
+      overflow="auto"
+      css={scrollbarCss}
+    >
+      {children}
+    </ProjectLayout>
+  ) : (
+    <LayoutNavbar navbar={<AppNavbar />}>
+      <Box
         w="full"
         h="full"
         position="relative"
@@ -255,23 +269,19 @@ const ProjectArticles: NextPage = () => {
         css={scrollbarCss}
       >
         {children}
-      </ProjectLayout>
-    ) : (
-      <LayoutNavbar navbar={<AppNavbar />}>
-        <Box
-          w="full"
-          h="full"
-          position="relative"
-          overflow="auto"
-          css={scrollbarCss}
-        >
-          {children}
-        </Box>
-      </LayoutNavbar>
-    )
+      </Box>
+    </LayoutNavbar>
+  )
+
+const ProjectArticles: NextPage = () => {
+  const [value, setValue] = useState<Node[]>(initValue)
+  const router = useRouter()
+  const projectLayout = !((router.query?.fullscreen ?? 'true') === 'true')
+
+  const scrollbarCss = useScrollBarTheme()
 
   return (
-    <Layout>
+    <Layout projectLayout={projectLayout} scrollbarCss={scrollbarCss}>
       <Article projectLayout={projectLayout}>
         <Title project="Example Project">Title here</Title>
         <Flex alignItems="center" marginY={4}>
