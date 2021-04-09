@@ -7,10 +7,10 @@
   resolved "https://registry.yarnpkg.com/@alloc/types/-/types-1.3.0.tgz#904245b8d3260a4b7d8a801c12501968f64fac08"
   integrity sha512-mH7LiFiq9g6rX2tvt1LtwsclfG5hnsmtIfkZiauAGrm1AwXhoRS0sF2WrN9JGN7eV5vFXqNaB0eXZ3IvMsVi9g==
 
-"@apollo/client@^3.3.13":
-  version "3.3.13"
-  resolved "https://registry.yarnpkg.com/@apollo/client/-/client-3.3.13.tgz#0aadde13b80ce129d1261161413a9de2b0dec70e"
-  integrity sha512-usiVmXiOq0J/GpyIOIhlF8ItHpiPJObC7zoxLYPoOYj3G3OB0hCIcUKs3aTJ3ATW7u8QxvYgRaJg72NN7E1WOg==
+"@apollo/client@^3.3.14":
+  version "3.3.14"
+  resolved "https://registry.yarnpkg.com/@apollo/client/-/client-3.3.14.tgz#b077f42e17941dbf4c62c4f41bf83c0828872d09"
+  integrity sha512-z7YwMvF9grmpWUG+26e3gPcBAOA/r/Ci5gwK7JVm3bGYG9kKqG8MF6sMXEbuwTsFseE4duSp0icJ6tdzxJhhlA==
   dependencies:
     "@graphql-typed-document-node/core" "^3.0.0"
     "@types/zen-observable" "^0.8.0"
@@ -1635,10 +1635,10 @@
     "@react-spring/shared" "^9.0.0"
     "@react-spring/types" "^9.0.0"
 
-"@react-three/drei@^4.0.2":
-  version "4.0.2"
-  resolved "https://registry.yarnpkg.com/@react-three/drei/-/drei-4.0.2.tgz#60a5e4405d7599c4b1f3e84bce66e2ead4097e36"
-  integrity sha512-cPGznysmZsjNQ2k2al/A2w2G2CSRRDEVrePXy3HVPwD/Uxvf5nldFRfc6bsaQzT52fcOSf/APJdY7ij26Y7Q5w==
+"@react-three/drei@^4.0.3":
+  version "4.1.3"
+  resolved "https://registry.yarnpkg.com/@react-three/drei/-/drei-4.1.3.tgz#fc5cbaa9185e994ea3aaa338b2d5da01e3f34576"
+  integrity sha512-X4yhz8OzXk03mnLqCK37CzyheUcU9cRWEg6uaVGZic/TuJi9vOs0xhgH8L4/AdAPdPnPwofCowbE4I5S+s0NXg==
   dependencies:
     "@babel/runtime" "^7.11.2"
     "@react-spring/web" "^9.0.0-rc.3"
@@ -1649,7 +1649,7 @@
     lodash.pick "^4.4.0"
     react-merge-refs "^1.0.0"
     stats.js "^0.17.0"
-    three-stdlib "^1.1.3"
+    three-stdlib "^1.1.4"
     troika-three-text "^0.38.1"
     use-asset "^1.0.4"
     utility-types "^3.10.0"
@@ -5341,12 +5341,7 @@ graphql-middleware@^6.0.5:
     "@graphql-tools/delegate" "^7.1.1"
     "@graphql-tools/schema" "^7.1.3"
 
-graphql-tag@^2.11.0:
-  version "2.11.0"
-  resolved "https://registry.yarnpkg.com/graphql-tag/-/graphql-tag-2.11.0.tgz#1deb53a01c46a7eb401d6cb59dec86fa1cccbffd"
-  integrity sha512-VmsD5pJqWJnQZMUeRwrDhfgoyqcfwEkvtpANqcoUG8/tOLkwNgU9mzub/Mc78OJMhHjx7gfAMTxzdG43VGg3bA==
-
-graphql-tag@^2.12.0:
+graphql-tag@^2.11.0, graphql-tag@^2.12.0:
   version "2.12.3"
   resolved "https://registry.yarnpkg.com/graphql-tag/-/graphql-tag-2.12.3.tgz#ac47bf9d51c67c68ada8a33fd527143ed15bb647"
   integrity sha512-5wJMjSvj30yzdciEuk9dPuUBUR56AqDi3xncoYQl1i42pGdSqOJrJsdb/rz5BDoy+qoGvQwABcBeF0xXY3TrKw==
@@ -8135,6 +8130,11 @@ postcss@^7.0.32:
     source-map "^0.6.1"
     supports-color "^6.1.0"
 
+potpack@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/potpack/-/potpack-1.0.1.tgz#d1b1afd89e4c8f7762865ec30bd112ab767e2ebf"
+  integrity sha512-15vItUAbViaYrmaB/Pbw7z6qX2xENbFSTA7Ii4tgbPtasxm5v6ryKhKtL91tpWovDJzTiZqdwzhcFBCwiMVdVw==
+
 prelude-ls@^1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/prelude-ls/-/prelude-ls-1.2.1.tgz#debc6489d7a6e6b0e7611888cec880337d316396"
@@ -9829,10 +9829,10 @@ text-table@^0.2.0:
   resolved "https://registry.yarnpkg.com/text-table/-/text-table-0.2.0.tgz#7f5ee823ae805207c00af2df4a84ec3fcfa570b4"
   integrity sha1-f17oI66AUgfACvLfSoTsP8+lcLQ=
 
-three-stdlib@^1.1.3:
-  version "1.1.3"
-  resolved "https://registry.yarnpkg.com/three-stdlib/-/three-stdlib-1.1.3.tgz#a36f62680b605f22d47b94793871aa8609cbf7fc"
-  integrity sha512-vm3NONg4BG8wyINruu6q8wH6RM/rhaD9Ce/GWyA37cUNTawanSm9Bcj1etXVYztrtVLaBxBpP95GMMst3MXDow==
+three-stdlib@^1.1.4:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/three-stdlib/-/three-stdlib-1.2.2.tgz#1bab8bd648d92d2d7759639f42864fc16876f46c"
+  integrity sha512-fcr84rofXVSeEqf27zBGEju6ih/lcvRRFSTjbHvDfAYKUd0r7tFLwQOUJxW6K7Y/M3pBQMRS9RWllADWuYIJGg==
   dependencies:
     "@babel/runtime" "^7.13.10"
     "@webgpu/glslang" "^0.0.15"
@@ -9842,6 +9842,7 @@ three-stdlib@^1.1.3:
     ktx-parse "^0.0.5"
     mmd-parser "^1.0.3"
     opentype.js "^1.3.3"
+    potpack "^1.0.1"
     zstddec "^0.0.2"
 
 three@^0.127.0:
