@@ -12,6 +12,6 @@
   "dependencies": {
     "@prisma/client": "*",
     "@types/node": "*",
-    "prisma": "^2.19.0"
+    "prisma": "^2.22.0"
   }
 }
