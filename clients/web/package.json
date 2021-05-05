@@ -29,7 +29,7 @@
     ]
   },
   "dependencies": {
-    "@apollo/client": "^3.3.14",
+    "@apollo/client": "^3.3.16",
     "@chakra-ui/react": "^1.6.0",
     "@chakra-ui/theme-tools": "^1.1.4",
     "@emotion/react": "^11.1.5",
