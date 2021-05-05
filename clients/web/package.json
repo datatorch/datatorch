@@ -59,7 +59,7 @@
     "react-use": "^17.2.1",
     "runtypes": "^6.0.0",
     "sass": "^1.32.8",
-    "slate": "^0.59.0",
+    "slate": "^0.62.0",
     "slate-history": "^0.62.0",
     "slate-react": "^0.59.0",
     "slugify": "^1.4.7",
