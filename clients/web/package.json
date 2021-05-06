@@ -41,7 +41,7 @@
     "graphql": "^15.5.0",
     "immutability-helper": "^3.1.1",
     "is-hotkey": "^0.2.0",
-    "katex": "^0.13.0",
+    "katex": "^0.13.6",
     "leaflet": "^1.7.1",
     "leaflet.glify": "^3.1.0",
     "lodash": "^4.17.21",
