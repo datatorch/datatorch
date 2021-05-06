@@ -56,7 +56,7 @@
     "react-leaflet": "^3.1.0",
     "react-three-fiber": "^5.3.22",
     "react-twitter-widgets": "^1.9.5",
-    "react-use": "^17.2.1",
+    "react-use": "^17.2.4",
     "runtypes": "^6.3.0",
     "sass": "^1.32.12",
     "slate": "^0.59.0",
