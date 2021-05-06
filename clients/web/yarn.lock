@@ -2573,7 +2573,7 @@ chevrotain@^7.1.2:
   dependencies:
     regexp-to-ast "0.5.0"
 
-chokidar@3.5.1, "chokidar@>=2.0.0 <4.0.0":
+chokidar@3.5.1, "chokidar@>=3.0.0 <4.0.0":
   version "3.5.1"
   resolved "https://registry.yarnpkg.com/chokidar/-/chokidar-3.5.1.tgz#ee9ce7bbebd2b79f49f304799d5468e31e14e68a"
   integrity sha512-9+s+Od+W0VJJzawDma/gvBNQqkTiqYTWLuZoyAsivsI4AaWTCzHG06/TMjsf1cYe9Cb97UCEhjz7HvnPk2p/tw==
@@ -6642,10 +6642,10 @@ react-grid-layout@^1.2.4:
     react-draggable "^4.0.0"
     react-resizable "^1.10.0"
 
-react-hook-form@^6.15.5:
-  version "6.15.5"
-  resolved "https://registry.yarnpkg.com/react-hook-form/-/react-hook-form-6.15.5.tgz#c2578f9ce6a6df7b33015587d40cd880dc13e2db"
-  integrity sha512-so2jEPYKdVk1olMo+HQ9D9n1hVzaPPFO4wsjgSeZ964R7q7CHsYRbVF0PGBi83FcycA5482WHflasdwLIUVENg==
+react-hook-form@^7.4.1:
+  version "7.4.1"
+  resolved "https://registry.yarnpkg.com/react-hook-form/-/react-hook-form-7.4.1.tgz#35195c567c0ef3eabfbbae478246b314e1f6b883"
+  integrity sha512-X+uZTj4WOHO5NStST/dxiwJEtf1I+QtLMs1QNH8A1qTi9fW9dURUx3vQayp3VOO7YLKJQ9gmQqnJRkcIv0fcpw==
 
 react-icons@^4.2.0:
   version "4.2.0"
@@ -7063,10 +7063,10 @@ run-parallel@^1.1.9:
   dependencies:
     queue-microtask "^1.2.2"
 
-runtypes@^6.0.0:
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/runtypes/-/runtypes-6.0.0.tgz#0010e7e050a41d4ab38b6138051dfb8774a53f07"
-  integrity sha512-hVBZ2S0i9MmyViSpwCU7TGFuEZxjPIeTMbhCpz59/8C3IGbPL6N03bIVALGfVWZQ+MTXORjWpWnZUP3hPyw96w==
+runtypes@^6.3.0:
+  version "6.3.0"
+  resolved "https://registry.yarnpkg.com/runtypes/-/runtypes-6.3.0.tgz#bd88392c21f471bd45591d5eabaa4644ca7cdf3c"
+  integrity sha512-FTNUs13CIrCTjReBOaeY/8EY1LYIQVkkwyE9z5MCjZe9uew9/8TRbWF1PcTczgTFfGBjkjUKeedFWU2O3ExjPg==
 
 rxjs@^6.6.6:
   version "6.6.7"
@@ -7112,12 +7112,12 @@ sane@^4.0.3:
     minimist "^1.1.1"
     walker "~1.0.5"
 
-sass@^1.32.8:
-  version "1.32.8"
-  resolved "https://registry.yarnpkg.com/sass/-/sass-1.32.8.tgz#f16a9abd8dc530add8834e506878a2808c037bdc"
-  integrity sha512-Sl6mIeGpzjIUZqvKnKETfMf0iDAswD9TNlv13A7aAF3XZlRPMq4VvJWBC2N2DXbp94MQVdNSFG6LfF/iOXrPHQ==
+sass@^1.32.12:
+  version "1.32.12"
+  resolved "https://registry.yarnpkg.com/sass/-/sass-1.32.12.tgz#a2a47ad0f1c168222db5206444a30c12457abb9f"
+  integrity sha512-zmXn03k3hN0KaiVTjohgkg98C3UowhL1/VSGdj4/VAAiMKGQOE80PFPxFP2Kyq0OUskPKcY5lImkhBKEHlypJA==
   dependencies:
-    chokidar ">=2.0.0 <4.0.0"
+    chokidar ">=3.0.0 <4.0.0"
 
 saxes@^5.0.1:
   version "5.0.1"
