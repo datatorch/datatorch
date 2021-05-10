@@ -62,7 +62,7 @@
     "slate": "^0.59.0",
     "slate-history": "^0.62.0",
     "slate-react": "^0.59.0",
-    "slugify": "^1.4.7",
+    "slugify": "^1.5.2",
     "subscriptions-transport-ws": "^0.9.18",
     "three": "^0.127.0",
     "wavesurfer.js": "^5.0.1"
