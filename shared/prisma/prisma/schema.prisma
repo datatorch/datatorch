@@ -22,7 +22,6 @@ generator nexusPrisma {
 /// An owner of one or more projects.
 model ProjectOwner {
   id              String            @id @default(uuid())
-  email           String            @unique
   name            String
   createdAt       DateTime          @default(now())
   updatedAt       DateTime          @default(now())
@@ -38,6 +37,7 @@ model ProjectOwner {
 
 model UserCredentials {
   id              String            @id @default(uuid())
+  email           String            @unique
   login           String            @unique
   password        String
   isVerified      Boolean           @default(false)
@@ -49,6 +49,7 @@ model Profile {
   id              String            @id @default(uuid())
   projectOwner    ProjectOwner      @relation(fields: [projectOwnerId], references: [id])
   projectOwnerId  String
+  publicEmail     String?
   company         String?
   avatarUrl       String?
   websiteUrl      String?
