@@ -1,6 +1,43 @@
 import { extendType, nonNull, objectType, stringArg } from 'nexus'
 import { ProjectOwner } from 'nexus-prisma'
 import argon2 from 'argon2'
+interface NexusPrismaEntity {
+  $name: string
+  $description: string
+  [prop: string]:
+    | {
+        type: unknown
+        name: string
+        description?: string
+      }
+    | any
+}
+
+const createObjectTypeFromPrisma = <Entity extends NexusPrismaEntity>(
+  entity: Entity,
+  properties: Array<Exclude<keyof Entity, '$name' | '$description'>>
+) => {
+  return objectType({
+    name: entity.$name,
+    description: entity.$description,
+    definition(t) {
+      for (const prop of properties) {
+        const { name, type } = entity[prop]
+        t.field(name, { type })
+      }
+    }
+  })
+}
+
+export const NProjectOwner = createObjectTypeFromPrisma(ProjectOwner, [
+  'id',
+  'name',
+  'createdAt',
+  'updatedAt',
+  'disabled',
+  'lastSeenAt',
+  'type'
+])
 
 export const ProjectOwnerMutation = extendType({
   type: 'Mutation',
@@ -62,41 +99,3 @@ export const ProjectOwnerMutation = extendType({
     })
   }
 })
-
-interface NexusPrismaEntity {
-  $name: string
-  $description: string
-  [prop: string]:
-    | {
-        type: unknown
-        name: string
-        description?: string
-      }
-    | any
-}
-
-const createObjectTypeFromPrisma = <Entity extends NexusPrismaEntity>(
-  entity: Entity,
-  properties: Array<Exclude<keyof Entity, '$name' | '$description'>>
-) => {
-  return objectType({
-    name: entity.$name,
-    description: entity.$description,
-    definition(t) {
-      for (const prop of properties) {
-        const { name, type } = entity[prop]
-        t.field(name, { type })
-      }
-    }
-  })
-}
-
-export const NProjectOwner = createObjectTypeFromPrisma(ProjectOwner, [
-  'id',
-  'name',
-  'createdAt',
-  'updatedAt',
-  'disabled',
-  'lastSeenAt',
-  'type'
-])
