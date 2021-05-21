@@ -10,6 +10,6 @@
   "dependencies": {
     "@prisma/client": "*",
     "@types/node": "*",
-    "prisma": "^2.22.0"
+    "prisma": "^2.23.0"
   }
 }
