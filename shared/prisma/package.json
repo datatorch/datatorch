@@ -8,8 +8,8 @@
     "generate": "npx prisma generate"
   },
   "dependencies": {
-    "@prisma/client": "*",
+    "@prisma/client": "^2.23.0",
     "@types/node": "*",
-    "prisma": "^2.22.0"
+    "prisma": "^2.23.0"
   }
 }

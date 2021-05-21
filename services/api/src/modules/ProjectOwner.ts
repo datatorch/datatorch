@@ -66,12 +66,8 @@ const createObjectTypeFromPrisma = <Entity extends NexusPrismaEntity>(
 export const NProjectOwner = createObjectTypeFromPrisma(ProjectOwner, [
   'id',
   'email',
-  'login',
   'name',
-  'avatarUrl',
-  'description',
   'createdAt',
   'updatedAt',
-  'disabled',
-  'location'
+  'disabled'
 ])

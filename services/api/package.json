@@ -12,11 +12,13 @@
     "apollo-server-core": "^2.21.2",
     "apollo-server-fastify": "next-v3",
     "fastify": "^3.14.0",
+    "fastify-jwt": "^2.4.0",
     "graphql": "^15.5.0",
     "graphql-iso-date": "^3.6.1",
     "graphql-middleware": "^6.0.10",
     "nexus": "^1.0.0",
     "nexus-prisma": "^0.25.0",
+    "passport": "^0.4.1",
     "prisma": "^2.22.0"
   },
   "devDependencies": {
