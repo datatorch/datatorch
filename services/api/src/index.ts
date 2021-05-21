@@ -1,8 +1,9 @@
 import { ApolloServer } from 'apollo-server-fastify'
 import fastify from 'fastify'
 
-import { createContext as context } from './context'
+import { createContext as context, TOKEN_SECRET } from './context'
 import { schema } from './schema'
+import cookie, { FastifyCookieOptions } from 'fastify-cookie'
 
 const GRAPHQL_API = '/api/graphql'
 const PORT = 4000
@@ -12,6 +13,9 @@ const createApp = async () => {
 
   const app = fastify({ logger: true })
   app.register(graphql.createHandler({ path: GRAPHQL_API }))
+  app.register(cookie, {
+    secret: TOKEN_SECRET
+  } as FastifyCookieOptions)
   return app
 }
 
