@@ -8248,10 +8248,10 @@ react-grid-layout@^1.2.4:
     react-draggable "^4.0.0"
     react-resizable "^1.10.0"
 
-react-hook-form@^7.0.7:
-  version "7.6.0"
-  resolved "https://registry.yarnpkg.com/react-hook-form/-/react-hook-form-7.6.0.tgz#ec8aa8376738356c5af09992404292ba04067ac4"
-  integrity sha512-Ai3lx5TZO/W274PVgIqOkjhCAxQJ7KRU9c6tTM1M0LDctCUZ0LavirUiy+42b0gxGLUswO0vPsxcpw1CkkebUA==
+react-hook-form@^7.6.6:
+  version "7.6.6"
+  resolved "https://registry.yarnpkg.com/react-hook-form/-/react-hook-form-7.6.6.tgz#74cd999a9db972f7848663529acf54cc5a4a837d"
+  integrity sha512-vmvrp/foLeWV1+g0IADvXc5xoJj8UMBIlN8PqgmbCD70oGFcNkQPc2FGfqOoJr6oL0EHkCpLizXWDqYOz/mvjw==
 
 react-icons@^4.2.0:
   version "4.2.0"
@@ -8979,10 +8979,10 @@ slate-history@^0.62.0:
     immer "^7.0.0"
     is-plain-object "^3.0.0"
 
-slate-react@^0.59.0:
-  version "0.59.0"
-  resolved "https://registry.yarnpkg.com/slate-react/-/slate-react-0.59.0.tgz#c8043dce7ea71279f314d9951c32e4f548b1ea0b"
-  integrity sha512-Fx5vfTi0s1fY5PaXzPH8uA9mW8aevVVYrGGvqX/k363tlPDnQSs/QTibIyFl1Y3MPJ+GdocoyOGjAaZMUIXfIg==
+slate-react@^0.63.0:
+  version "0.63.0"
+  resolved "https://registry.yarnpkg.com/slate-react/-/slate-react-0.63.0.tgz#45d929c3fbd812e1bb749023a0f2bfdcdf5d26c0"
+  integrity sha512-gjUvRCFoLZHifiCH+7wZtNXFzxYWCPbxk4ZT8+bB0DW+eAHkbbXO66qzHeY0U4OqQbtTtcao8kvowxVcNtlkBA==
   dependencies:
     "@types/is-hotkey" "^0.1.1"
     "@types/lodash" "^4.14.149"
@@ -8991,6 +8991,7 @@ slate-react@^0.59.0:
     is-plain-object "^3.0.0"
     lodash "^4.17.4"
     scroll-into-view-if-needed "^2.2.20"
+    tiny-invariant "1.0.6"
 
 slate@^0.59.0:
   version "0.59.0"
@@ -9671,6 +9672,11 @@ tiny-inflate@^1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/tiny-inflate/-/tiny-inflate-1.0.3.tgz#122715494913a1805166aaf7c93467933eea26c4"
   integrity sha512-pkY1fj1cKHb2seWDy0B16HeWyczlJA9/WW3u3c4z/NiWDsO3DOU5D7nhTLE9CF0yXv/QZFY7sEJmj24dK+Rrqw==
+
+tiny-invariant@1.0.6:
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/tiny-invariant/-/tiny-invariant-1.0.6.tgz#b3f9b38835e36a41c843a3b0907a5a7b3755de73"
+  integrity sha512-FOyLWWVjG+aC0UqG76V53yAWdXfH8bO6FNmyZOuUrzDzK8DI3/JRY25UD7+g49JWM1LXwymsKERB+DzI0dTEQA==
 
 tiny-invariant@^1.0.6:
   version "1.1.0"
