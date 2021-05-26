@@ -2427,10 +2427,10 @@
   resolved "https://registry.yarnpkg.com/@types/warning/-/warning-3.0.0.tgz#0d2501268ad8f9962b740d387c4654f5f8e23e52"
   integrity sha1-DSUBJorY+ZYrdA04fEZU9fjiPlI=
 
-"@types/wavesurfer.js@^3.3.1":
-  version "3.3.2"
-  resolved "https://registry.yarnpkg.com/@types/wavesurfer.js/-/wavesurfer.js-3.3.2.tgz#e916456691586b07004f40d56c22dc7138509eae"
-  integrity sha512-bujQxJR+2TDXe5hc2kG36n38rJtdTbCafQddWaNJwgdNDVqMVxCCKAFYRQWq1aXnN/h9BTHLIVwi4gM8IwRt5A==
+"@types/wavesurfer.js@^5.0.1":
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/@types/wavesurfer.js/-/wavesurfer.js-5.0.1.tgz#5f0f77a4dbbe842114f60b7add06d82f99a471be"
+  integrity sha512-BSIsRxbXR+gZxSdW3/WSgucjt2njpGi21BCcBAmV+Fif4Qhe6/Od0RnTmM5Fbq9U1VZLmbWOCTwakdSCGP88og==
 
 "@types/websocket@1.0.2":
   version "1.0.2"
@@ -8248,10 +8248,10 @@ react-grid-layout@^1.2.4:
     react-draggable "^4.0.0"
     react-resizable "^1.10.0"
 
-react-hook-form@^7.0.7:
-  version "7.6.0"
-  resolved "https://registry.yarnpkg.com/react-hook-form/-/react-hook-form-7.6.0.tgz#ec8aa8376738356c5af09992404292ba04067ac4"
-  integrity sha512-Ai3lx5TZO/W274PVgIqOkjhCAxQJ7KRU9c6tTM1M0LDctCUZ0LavirUiy+42b0gxGLUswO0vPsxcpw1CkkebUA==
+react-hook-form@^7.6.6:
+  version "7.6.6"
+  resolved "https://registry.yarnpkg.com/react-hook-form/-/react-hook-form-7.6.6.tgz#74cd999a9db972f7848663529acf54cc5a4a837d"
+  integrity sha512-vmvrp/foLeWV1+g0IADvXc5xoJj8UMBIlN8PqgmbCD70oGFcNkQPc2FGfqOoJr6oL0EHkCpLizXWDqYOz/mvjw==
 
 react-icons@^4.2.0:
   version "4.2.0"
