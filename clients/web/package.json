@@ -65,7 +65,7 @@
     "sass": "^1.32.12",
     "slate": "^0.59.0",
     "slate-history": "^0.62.0",
-    "slate-react": "^0.59.0",
+    "slate-react": "^0.65.0",
     "slugify": "^1.5.2",
     "subscriptions-transport-ws": "^0.9.18",
     "three": "^0.128.0",
