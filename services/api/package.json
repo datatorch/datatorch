@@ -16,7 +16,7 @@
     "graphql-iso-date": "^3.6.1",
     "graphql-middleware": "^6.0.10",
     "nexus": "^1.0.0",
-    "nexus-prisma": "^0.25.0",
+    "nexus-prisma": "^0.28.0",
     "prisma": "^2.23.0"
   },
   "devDependencies": {
