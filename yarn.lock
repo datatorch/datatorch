@@ -859,7 +859,7 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
-"@babel/runtime@^7.0.0", "@babel/runtime@^7.1.2", "@babel/runtime@^7.10.2", "@babel/runtime@^7.11.2", "@babel/runtime@^7.12.1", "@babel/runtime@^7.12.13", "@babel/runtime@^7.12.5", "@babel/runtime@^7.13.10", "@babel/runtime@^7.7.2":
+"@babel/runtime@^7.0.0", "@babel/runtime@^7.1.2", "@babel/runtime@^7.10.2", "@babel/runtime@^7.11.2", "@babel/runtime@^7.12.13", "@babel/runtime@^7.12.5", "@babel/runtime@^7.13.10", "@babel/runtime@^7.7.2":
   version "7.13.10"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.13.10.tgz#47d42a57b6095f4468da440388fdbad8bebf0d7d"
   integrity sha512-4QPkjJq6Ns3V/RgpEahRk+AGfL0eO6RHHtTWoNNr5mO49G6B5+X6d6THgWEAvTrznU5xYpbAlVKRYcsCgh/Akw==
@@ -2648,6 +2648,22 @@
     use-asset "^1.0.4"
     utility-types "^3.10.0"
     zustand "^3.0.3"
+
+"@react-three/fiber@latest":
+  version "7.0.1"
+  resolved "https://registry.yarnpkg.com/@react-three/fiber/-/fiber-7.0.1.tgz#d7b5db1c4b45fe90442647f88dff1906e56ccfd9"
+  integrity sha512-UrC5wVywYAHIvcfHEreJXqDZJvQTFSuB737MBv1VliI4d1S0MbSLG9hOCDaWWgX9Wq+6jvVxG2JNfGXvZK1ATQ==
+  dependencies:
+    "@babel/runtime" "^7.13.10"
+    react-merge-refs "^1.1.0"
+    react-reconciler "^0.26.2"
+    react-three-fiber "0.0.0-deprecated"
+    react-use-measure "^2.0.4"
+    resize-observer-polyfill "^1.5.1"
+    scheduler "^0.20.2"
+    use-asset "^1.0.4"
+    utility-types "^3.10.0"
+    zustand "^3.5.1"
 
 "@samverschueren/stream-to-observable@^0.3.0":
   version "0.3.1"
@@ -9879,14 +9895,14 @@ react-merge-refs@^1.0.0, react-merge-refs@^1.1.0:
   resolved "https://registry.yarnpkg.com/react-merge-refs/-/react-merge-refs-1.1.0.tgz#73d88b892c6c68cbb7a66e0800faa374f4c38b06"
   integrity sha512-alTKsjEL0dKH/ru1Iyn7vliS2QRcBp9zZPGoWxUOvRGWPUYgjo+V01is7p04It6KhgrzhJGnIj9GgX8W4bZoCQ==
 
-react-reconciler@0.26.1:
-  version "0.26.1"
-  resolved "https://registry.yarnpkg.com/react-reconciler/-/react-reconciler-0.26.1.tgz#860952dd359fd870f94895c254271e3a9de3b2d6"
-  integrity sha512-6E/CvH9zcDmHjhiNJlP0qJ8+3ufnY2b5RWs774Uy8XKWN0l6qfnlkz0XnDacxqj2rbJdq76w9dlFXjPPOQrmqA==
+react-reconciler@^0.26.2:
+  version "0.26.2"
+  resolved "https://registry.yarnpkg.com/react-reconciler/-/react-reconciler-0.26.2.tgz#bbad0e2d1309423f76cf3c3309ac6c96e05e9d91"
+  integrity sha512-nK6kgY28HwrMNwDnMui3dvm3rCFjZrcGiuwLc5COUipBK5hWHLOxMJhSnSomirqWwjPBJKV1QcbkI0VJr7Gl1Q==
   dependencies:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
-    scheduler "^0.20.1"
+    scheduler "^0.20.2"
 
 react-refresh@0.8.3:
   version "0.8.3"
@@ -9945,20 +9961,17 @@ react-style-singleton@^2.1.0:
     invariant "^2.2.4"
     tslib "^1.0.0"
 
-react-three-fiber@^5.3.22:
-  version "5.3.22"
-  resolved "https://registry.yarnpkg.com/react-three-fiber/-/react-three-fiber-5.3.22.tgz#6e5eedfa784827b70b07d4a087c214c89ec7a757"
-  integrity sha512-TAOsFg7oerXDkUK/NUwlaMd+drteokXdDMACDmeBKzx64Z0IruJl/ORW7x3giWzqG3fs6BBv+rpcreFW9Ofuyg==
+react-three-fiber@0.0.0-deprecated:
+  version "0.0.0-deprecated"
+  resolved "https://registry.yarnpkg.com/react-three-fiber/-/react-three-fiber-0.0.0-deprecated.tgz#c737242487d824cf9520307308b7e4c4071a278f"
+  integrity sha512-EblIqTAsIpkYeM8bZtC4lcpTE0A2zCEGipFB52RgcQq/q+0oryrk7Sxt+sqhIjUu6xMNEVywV8dr74lz5yWO6A==
+
+react-three-fiber@^6.0.13:
+  version "6.0.13"
+  resolved "https://registry.yarnpkg.com/react-three-fiber/-/react-three-fiber-6.0.13.tgz#6dbbc5d8d5fe94c49986e9c71024af7eaf68a441"
+  integrity sha512-uShQnkMVLvnzwf3YzY9mnzCnpmLpvTQkc0ycrtwk8fyjXmZt2695tLn3tufPF6uxq06UKJRKJcjCVCMXyUcEPQ==
   dependencies:
-    "@babel/runtime" "^7.12.1"
-    react-merge-refs "^1.1.0"
-    react-reconciler "0.26.1"
-    react-use-measure "^2.0.3"
-    resize-observer-polyfill "^1.5.1"
-    scheduler "0.20.1"
-    tiny-emitter "^2.1.0"
-    use-asset "^1.0.4"
-    utility-types "^3.10.0"
+    "@react-three/fiber" latest
 
 react-twitter-widgets@^1.9.5:
   version "1.10.0"
@@ -9972,7 +9985,7 @@ react-universal-interface@^0.6.2:
   resolved "https://registry.yarnpkg.com/react-universal-interface/-/react-universal-interface-0.6.2.tgz#5e8d438a01729a4dbbcbeeceb0b86be146fe2b3b"
   integrity sha512-dg8yXdcQmvgR13RIlZbTRQOoUrDciFVoSBZILwjE2LFISxZZ8loVJKAkuzswl5js8BHda79bIb2b84ehU8IjXw==
 
-react-use-measure@^2.0.3:
+react-use-measure@^2.0.4:
   version "2.0.4"
   resolved "https://registry.yarnpkg.com/react-use-measure/-/react-use-measure-2.0.4.tgz#cb675b36eaeaf3681b94d5f5e08b2a1e081fedc9"
   integrity sha512-7K2HIGaPMl3Q9ZQiEVjen3tRXl4UDda8LiTPy/QxP8dP2rl5gPBhf7mMH6MVjjRNv3loU7sNzey/ycPNnHVTxQ==
@@ -10360,15 +10373,7 @@ saxes@^5.0.1:
   dependencies:
     xmlchars "^2.2.0"
 
-scheduler@0.20.1:
-  version "0.20.1"
-  resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.20.1.tgz#da0b907e24026b01181ecbc75efdc7f27b5a000c"
-  integrity sha512-LKTe+2xNJBNxu/QhHvDR14wUXHRQbVY5ZOYpOGWRzhydZUqrLb2JBvLPY7cAqFmqrWuDED0Mjk7013SZiOz6Bw==
-  dependencies:
-    loose-envify "^1.1.0"
-    object-assign "^4.1.1"
-
-scheduler@^0.20.1, scheduler@^0.20.2:
+scheduler@^0.20.2:
   version "0.20.2"
   resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.20.2.tgz#4baee39436e34aa93b4874bddcbf0fe8b8b50e91"
   integrity sha512-2eWfGgAqqWFGqtdMmcL5zCMK1U8KlXv8SQFGglL3CEtd0aDVDWgeF/YoCmvln55m5zSk3J/20hTaSBeSObsQDQ==
@@ -11242,11 +11247,6 @@ timers-browserify@2.0.12, timers-browserify@^2.0.4:
   integrity sha512-9phl76Cqm6FhSX9Xe1ZUAMLtm1BLkKj2Qd5ApyWkXzsMRaA7dgr81kf4wJmQf/hAvg8EEyJxDo3du/0KlhPiKQ==
   dependencies:
     setimmediate "^1.0.4"
-
-tiny-emitter@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/tiny-emitter/-/tiny-emitter-2.1.0.tgz#1d1a56edfc51c43e863cbb5382a72330e3555423"
-  integrity sha512-NB6Dk1A9xgQPMoGqC5CVXn123gWyte215ONT5Pp5a0yt4nlEoO1ZWeCwpncaekPHXO60i47ihFnZPiRPjRMq4Q==
 
 tiny-inflate@^1.0.3:
   version "1.0.3"
@@ -12202,3 +12202,8 @@ zustand@^3.0.3:
   version "3.3.3"
   resolved "https://registry.yarnpkg.com/zustand/-/zustand-3.3.3.tgz#88b930a873d0f13e406f96958c1409645ea8b370"
   integrity sha512-KTN/O76rVc9muDoprsCDe/LQjbuq+GHYt5JdYahuXaGZ+8Gyk44SepzTFeQTF5J+b8+/Q+o90BaSEQ3WImKPog==
+
+zustand@^3.5.1:
+  version "3.5.2"
+  resolved "https://registry.yarnpkg.com/zustand/-/zustand-3.5.2.tgz#cf162a8bd1d86475bf308bc856c4d02ff13fd53c"
+  integrity sha512-HUCQI9O77/D/zvoWPNv4dwLriiiY2xtEqnQ0TVY8uaPjmOHls04Okd0w3sWUE9Ex2LaYlSk11DbPPIOZ6shEWg==
