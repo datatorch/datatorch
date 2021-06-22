@@ -7,7 +7,7 @@ import { join } from 'path'
 
 export const schema = applyMiddleware(
   makeSchema({
-    types: { ...types, ...NexusPrismaScalars },
+    types: [types, NexusPrismaScalars],
     contextType: {
       module: join(__dirname, 'context.ts'),
       export: 'Context'

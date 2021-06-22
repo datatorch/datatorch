@@ -8,7 +8,7 @@ import {
 
 export const Project = entityCreateType({
   entity: ProjectEntity,
-  properties: ['id', 'owner']
+  properties: ['id', 'visibility']
 })
 export const ProjectReadUniqueQuery = entityReadUnique(ProjectEntity)
 export const ProjectCreate = entityCreate(ProjectEntity)

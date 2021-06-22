@@ -1,6 +1,0 @@
-query ProjectOwner($id: ID, $email: String, $login: String) {
-  projectOwner(input: { id: $id, email: $email, login: $login }) {
-    id
-    name
-  }
-}

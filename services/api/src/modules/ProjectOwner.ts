@@ -13,15 +13,11 @@ export const ProjectOwner = entityCreateType({
   entity: ProjectOwnerEntity,
   properties: [
     'id',
-    'email',
-    'login',
     'name',
-    'avatarUrl',
-    'description',
     'createdAt',
     'updatedAt',
     'disabled',
-    'location',
-    'siteRole'
+    'type',
+    'role'
   ]
 })

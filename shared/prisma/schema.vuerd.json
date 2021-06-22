@@ -1,0 +1,346 @@
+{
+  "canvas": {
+    "version": "2.0.13",
+    "width": 2000,
+    "height": 2000,
+    "scrollTop": -63,
+    "scrollLeft": -36,
+    "zoomLevel": 0.9,
+    "show": {
+      "tableComment": false,
+      "columnComment": false,
+      "columnDataType": true,
+      "columnDefault": true,
+      "columnAutoIncrement": false,
+      "columnPrimaryKey": true,
+      "columnUnique": true,
+      "columnNotNull": true,
+      "relationship": true
+    },
+    "database": "MySQL",
+    "databaseName": "DataTorch",
+    "canvasType": "ERD",
+    "language": "GraphQL",
+    "tableCase": "pascalCase",
+    "columnCase": "camelCase",
+    "highlightTheme": "VS2015",
+    "bracketType": "none",
+    "setting": {
+      "relationshipDataTypeSync": true,
+      "columnOrder": [
+        "columnName",
+        "columnDataType",
+        "columnNotNull",
+        "columnUnique",
+        "columnAutoIncrement",
+        "columnDefault",
+        "columnComment"
+      ]
+    }
+  },
+  "table": {
+    "tables": [
+      {
+        "name": "ProjectOwner",
+        "comment": "owner of zero or more projects",
+        "columns": [
+          {
+            "name": "id",
+            "comment": "",
+            "dataType": "TEXT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": true,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "f5d234b2-d135-46c3-a3d6-1478fca87f45"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 118.88888888888891,
+          "top": 137.8888888888888,
+          "zIndex": 78,
+          "widthName": 81,
+          "widthComment": 120
+        },
+        "id": "507fc7e5-db39-4740-8cb9-5892f41dedcd"
+      },
+      {
+        "name": "UserCredentials",
+        "comment": "",
+        "columns": [
+          {
+            "name": "id",
+            "comment": "",
+            "dataType": "TEXT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": true,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "db586e3e-5143-4b0e-9fd8-97d3fc7af92a"
+          },
+          {
+            "name": "projectOwnerId",
+            "comment": "",
+            "dataType": "TEXT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 90,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "af783ce4-c1c1-49d0-9228-82c732bd5406"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 567.2222222222221,
+          "top": 44.33333333333395,
+          "zIndex": 81,
+          "widthName": 95,
+          "widthComment": 60
+        },
+        "id": "4bb266c6-2f45-4076-8930-db72e80656bd"
+      },
+      {
+        "name": "Profile",
+        "comment": "Social information of a ProjectOwner",
+        "columns": [
+          {
+            "name": "id",
+            "comment": "",
+            "dataType": "TEXT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": true,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "1e041b0e-4e5d-4fa9-a5a9-31356fc78609"
+          },
+          {
+            "name": "id",
+            "comment": "",
+            "dataType": "TEXT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "427caaf7-bd5d-466d-b2c1-4919c9e9840a"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 628.1111111111098,
+          "top": 213.11111111111117,
+          "zIndex": 80,
+          "widthName": 60,
+          "widthComment": 120
+        },
+        "id": "3aaa2e85-2758-40a1-93eb-b19708a2c011"
+      },
+      {
+        "name": "Project",
+        "comment": "Base unit of organization",
+        "columns": [
+          {
+            "name": "id",
+            "comment": "",
+            "dataType": "TEXT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": true,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "5119473d-6069-4739-9b06-1b85510a5d28"
+          },
+          {
+            "name": "id",
+            "comment": "",
+            "dataType": "TEXT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "77353f7f-e852-4d69-8d42-d25a4553dcb5"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 111.44444444444429,
+          "top": 341.8888888888887,
+          "zIndex": 82,
+          "widthName": 60,
+          "widthComment": 120
+        },
+        "id": "06e4a4df-828c-4b3c-82f7-f676b82d761e"
+      }
+    ],
+    "indexes": []
+  },
+  "memo": {
+    "memos": []
+  },
+  "relationship": {
+    "relationships": [
+      {
+        "identification": false,
+        "relationshipType": "ZeroOne",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "507fc7e5-db39-4740-8cb9-5892f41dedcd",
+          "columnIds": [
+            "f5d234b2-d135-46c3-a3d6-1478fca87f45"
+          ],
+          "x": 427.8888888888889,
+          "y": 160.2638888888888,
+          "direction": "right"
+        },
+        "end": {
+          "tableId": "4bb266c6-2f45-4076-8930-db72e80656bd",
+          "columnIds": [
+            "af783ce4-c1c1-49d0-9228-82c732bd5406"
+          ],
+          "x": 567.2222222222221,
+          "y": 99.33333333333394,
+          "direction": "left"
+        },
+        "id": "d48dba58-a217-4373-bfde-9ac6b2d3cbbc"
+      },
+      {
+        "identification": false,
+        "relationshipType": "ZeroOne",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "507fc7e5-db39-4740-8cb9-5892f41dedcd",
+          "columnIds": [
+            "f5d234b2-d135-46c3-a3d6-1478fca87f45"
+          ],
+          "x": 427.8888888888889,
+          "y": 205.0138888888888,
+          "direction": "right"
+        },
+        "end": {
+          "tableId": "3aaa2e85-2758-40a1-93eb-b19708a2c011",
+          "columnIds": [
+            "427caaf7-bd5d-466d-b2c1-4919c9e9840a"
+          ],
+          "x": 628.1111111111098,
+          "y": 268.1111111111112,
+          "direction": "left"
+        },
+        "id": "866110c0-964a-4f08-92e0-83417312b4d6"
+      },
+      {
+        "identification": false,
+        "relationshipType": "ZeroN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "507fc7e5-db39-4740-8cb9-5892f41dedcd",
+          "columnIds": [
+            "f5d234b2-d135-46c3-a3d6-1478fca87f45"
+          ],
+          "x": 273.3888888888889,
+          "y": 227.3888888888888,
+          "direction": "bottom"
+        },
+        "end": {
+          "tableId": "06e4a4df-828c-4b3c-82f7-f676b82d761e",
+          "columnIds": [
+            "77353f7f-e852-4d69-8d42-d25a4553dcb5"
+          ],
+          "x": 265.9444444444443,
+          "y": 341.8888888888887,
+          "direction": "top"
+        },
+        "id": "70e7ae40-24d9-4a7d-ae7e-226de1a88423"
+      }
+    ]
+  }
+}

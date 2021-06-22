@@ -5,7 +5,7 @@ import * as Config from './config'
  * Start API server on specified endpoint
  */
 const startApp = async () => {
-  const app = createApp()
+  const app = await createApp()
   try {
     await app.listen(Config.PORT)
   } catch (err) {

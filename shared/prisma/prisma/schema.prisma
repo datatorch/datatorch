@@ -21,25 +21,77 @@ generator nexusPrisma {
 
 /// An owner of one or more projects.
 model ProjectOwner {
-  id          String    @id @default(uuid())
-  email       String    @unique
-  login       String    @unique
-  name        String    
-  avatarUrl   String?
-  description String?
-  location    String?
-  disabled    Boolean   @default(false)
-  createdAt   DateTime  @default(now())
-  updatedAt   DateTime  @default(now())
-  /// A list of projects the user owns.
-  projects    Project[]
-  siteRole    Role
+  id              String            @id @default(uuid())
+  name            String            @default("")
+  createdAt       DateTime          @default(now())
+  updatedAt       DateTime          @default(now())
+  lastSeenAt      DateTime          @default(now())
+  disabled        Boolean           @default(false)
+  type            ProjectOwnerType  
+  role            Role              @default(USER)
+  userCredentials UserCredentials?
+  profile         Profile?
+  projects        Project[]
+  apiKeys         ApiKey[] 
+}
+
+model UserCredentials {
+  id              String            @id @default(uuid())
+  email           String            @unique
+  login           String            @unique
+  password        String
+  count           Int               @default(0)
+  isVerified      Boolean           @default(false)
+  projectOwner    ProjectOwner      @relation(fields: [projectOwnerId], references: [id])
+  projectOwnerId  String            @unique
+}
+
+model Profile {
+  id              String            @id @default(uuid())
+  projectOwner    ProjectOwner      @relation(fields: [projectOwnerId], references: [id])
+  projectOwnerId  String            @unique
+  publicEmail     String?
+  company         String?
+  avatarUrl       String?
+  websiteUrl      String?
+  description     String?
+  location        String?
+  githubId        String?
+  facebookId      String?
+  twitterId       String?
 }
 
 model Project {
-  id      String        @id @default(uuid())
-  owner   ProjectOwner  @relation(fields: [ownerId], references: [id])
-  ownerId String
+  id              String            @id @default(uuid())
+  projectOwner    ProjectOwner      @relation(fields: [projectOwnerId], references: [id])
+  projectOwnerId  String  
+  slug            String
+  name            String
+  about           String            @default("")
+  description     String            @default("")
+  visibility      ProjectVisibility @default(PRIVATE)
+  isArchived      Boolean           @default(false)
+  avatarUrl       String?
+  nsfw            Boolean
+  projectRole     ProjectRole[]
+}
+
+model ProjectRole {
+  id              String            @id @default(uuid())
+  name            String
+  description     String
+  project         Project           @relation(fields: [projectId], references: [id])
+  projectId       String
+}
+
+model ApiKey {
+  id              String            @id @default(uuid())
+  key             String
+  name            String
+  projectOwner    ProjectOwner      @relation(fields: [projectOwnerId], references: [id])
+  projectOwnerId  String
+  createdAt       DateTime          @default(now())
+  lastAccessedAt  DateTime          @default(now())
 }
 
 enum Role {
@@ -49,4 +101,14 @@ enum Role {
   USER
   ANNOTATOR
   GUEST
+}
+
+enum ProjectOwnerType {
+  USER
+  ORGANIZATION
+}
+
+enum ProjectVisibility {
+  PUBLIC
+  PRIVATE
 }

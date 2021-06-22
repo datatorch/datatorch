@@ -9,20 +9,29 @@
     "generate": "ts-node -r tsconfig-paths/register --transpile-only ./src/schema.ts"
   },
   "dependencies": {
-    "apollo-server-core": "^2.25.1",
-    "apollo-server-fastify": "next-v3",
+    "@prisma/client": "^2.23.0",
+    "apollo-server-core": "^3.0.0-preview.2",
+    "apollo-server-fastify": "3.0.0-preview.2",
+    "argon2": "^0.27.2",
+    "colors": "^1.4.0",
+    "date-fns": "^2.21.3",
     "fastify": "^3.18.0",
+    "fastify-cookie": "^5.3.1",
     "graphql": "^15.5.0",
     "graphql-iso-date": "^3.6.1",
     "graphql-middleware": "^6.0.10",
+    "graphql-scalars": "^1.9.3",
+    "jsonwebtoken": "^8.5.1",
     "nexus": "^1.0.0",
     "nexus-prisma": "^0.28.0",
-    "pino-pretty": "^5.0.2",
-    "prisma": "^2.25.0"
+    "passport": "^0.4.1"
   },
   "devDependencies": {
     "@types/graphql-iso-date": "^3",
+    "@types/jsonwebtoken": "^8.5.1",
     "@types/pino": "^6.3.8",
-    "ts-node-dev": "^1.1.6"
+    "ts-node-dev": "^1.1.6",
+    "pino-pretty": "^5.0.2",
+    "prisma": "^2.25.0"
   }
 }
