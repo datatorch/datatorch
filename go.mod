@@ -10,5 +10,5 @@ require (
 	github.com/gookit/color v1.4.2
 	github.com/pkg/browser v0.0.0-20210115035449-ce105d075bb4
 	github.com/pterm/pterm v0.12.22
-	github.com/spf13/cobra v1.1.3
+	github.com/spf13/cobra v1.2.1
 )
