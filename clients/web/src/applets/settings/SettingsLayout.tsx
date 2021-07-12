@@ -30,12 +30,16 @@ const SettingsSidebar: React.FC = () => {
     <>
       <SettingsSection>Account</SettingsSection>
 
-      <SettingsButton>Profile</SettingsButton>
-      <SettingsButton>Customization</SettingsButton>
-      <SettingsButton>Notifications</SettingsButton>
-      <SettingsButton>Account</SettingsButton>
-      <SettingsButton>Billing</SettingsButton>
-      <SettingsButton>API Keys</SettingsButton>
+      <SettingsButton href="">Profile</SettingsButton>
+      <SettingsButton href="/settings/customization">
+        Customization
+      </SettingsButton>
+      <SettingsButton href="/settings/notifications">
+        Notifications
+      </SettingsButton>
+      <SettingsButton href="/settings/account">Account</SettingsButton>
+      <SettingsButton href="/settings/billing">Billing</SettingsButton>
+      <SettingsButton href="/settings/keys">API Keys</SettingsButton>
 
       <SettingsSection paddingTop={8}>Admin</SettingsSection>
       <SettingsButton>System</SettingsButton>

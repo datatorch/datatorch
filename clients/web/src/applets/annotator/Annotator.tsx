@@ -66,7 +66,7 @@ export const Annotator: React.FC = () => {
         <Box borderRight="4px" borderColor="gray.900" p={1}>
           <Tools />
         </Box>
-        <Box flexGrow="1">
+        <Box flexGrow={1}>
           <Panel />
         </Box>
       </Flex>

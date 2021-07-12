@@ -26,7 +26,7 @@ import {
   LabelRowMoveIcon,
   LabelRowSettings
 } from './Label'
-import { FormControlInline } from '@/common/FormControlInline'
+import { FormControlInline } from '@/common/forms/FormControlInline'
 import { FaPlus, FaTrash } from 'react-icons/fa'
 
 export enum ClassificationType {
